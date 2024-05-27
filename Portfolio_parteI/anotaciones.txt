@@ -48,4 +48,7 @@ deactivate
 las bases de datos no se deben subir en git 
 tampo __pycache__
 
+el git ignore es muy importante crearlo
+
+
 
