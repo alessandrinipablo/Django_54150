@@ -1,0 +1,46 @@
+¿Qué es un entorno virtual?
+Un entorno virtual es una herramienta que permite crear entornos de trabajo aislados para proyectos de Python.
+ Cada entorno virtual tiene su propio intérprete de Python y sus propios directorios para los paquetes instalados.
+
+¿Para qué sirve?
+El entorno virtual sirve para:
+
+Aislar Dependencias: 
+    Permite que cada proyecto de Python tenga sus propias dependencias (librerías y paquetes). Esto es útil para evitar
+    conflictos entre proyectos que podrían necesitar diferentes versiones de las mismas librerías.
+
+Reproducibilidad:
+     Hace más fácil reproducir un entorno de desarrollo en diferentes máquinas, lo que es fundamental para 
+    trabajar en equipo y en despliegues en servidores.
+
+Control de Versiones: Facilita el control sobre las versiones de los paquetes utilizados, lo que ayuda a garantizar
+ que tu proyecto siga funcionando sin problemas cuando se actualicen las librerías externas.
+
+¿Por qué es beneficioso?
+Evitar Conflictos: Al tener un entorno aislado para cada proyecto, evitas conflictos de versiones entre diferentes proyectos. 
+Por ejemplo, un proyecto podría necesitar Django 3.1 mientras otro necesita Django 3.2.
+Facilita el Desarrollo y Despliegue: Puedes definir exactamente qué versiones de librerías son necesarias 
+para tu proyecto en un archivo como requirements.txt. Luego, otros desarrolladores pueden replicar tu entorno fácilmente.
+
+Limpieza y Orden: Mantiene tu sistema limpio y ordenado, evitando que todas las librerías se instalen de manera 
+global en tu sistema, lo cual podría llevar a un desorden y a dificultades para gestionar actualizaciones y dependencias.
+
+instalar entorno virtual 
+
+pip install virtualenv
+
+
+Navega a tu directorio de proyecto y crea un entorno virtual. Por ejemplo, si tu proyecto se llama mi_proyecto:
+cd mi_proyecto
+virtualenv venv
+
+activarlo 
+
+venv\Scripts\activate
+
+Guardar las dependencias en un archivo requirements.txt:
+
+pip freeze > requirements.txt
+
+deactivate
+
