@@ -44,3 +44,8 @@ pip freeze > requirements.txt
 
 deactivate
 
+
+las bases de datos no se deben subir en git 
+tampo __pycache__
+
+
